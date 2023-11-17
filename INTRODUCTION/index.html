@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // console.log("HELLO PEOPLE WELCOME TO DSA IN JS 👌")
+//////////////////////////////////////////////////////
+//is a number prime? or print if prime
+
+// var input=prompt("enter a number");12
+
+// var count=0;
+// for(var i=2;i*i<=input;i++){
+//     if(input%i==0){
+//         count++;
+//         break;
+//     }
+
+//     if(count==0){
+//         console.log(input+" is prime");
+//         break;
+//     }
+//         console.log(input+" is not prime");
+// }
+////////////////////////////////////////////////////
+//print all till prime
+
+// var input=54;
+
+// function isnotprime( num){
+//     console.log(num+ "is not prime");
+// }
+
+// for(var i=1;i<=54;i++){
+//     var count=0;
+//     for(var div=2;div*div<=i;div++){
+//         if(i%div==0){
+//             count++;
+//              isnotprime(i); // if any one only want to see only not prime
+//             break;
+//         }
+//         if(count!=0){
+//             console.log(i+" is not");
+//             break;
+//         }
+       
+//     }
+// }
+
+////////////////////////////////////////////////
+//print all fibonacci numbers
+
+// var input=10;
+// var a=0;
+// var b=1;
+// for(var i=1;i<=input;i++){
+//     var c=a+b;
+//     console.log(a);
+//     a=b;
+//     b=c;
+// }
+
+///////////////////////////////////////////////
+//Count digits
+
+// var input=123445;
+
+// var count=0;
+
+// while(input!=0){
+//     input=Math.floor(input/10);
+//     count++;
+// }
+// console.log(count);
+
+//////////////////////////////////////////////
+//digits of a number
+//12345 <= input
+//OUTPUT
+//1
+//2
+//3
+//4
+//5
+//  var input=1234;
+//  var count=0;
+
+//  var temp=input;
+//  while(temp!=0){
+//     temp=Math.floor(temp/10);
+//     count++;
+//  }
+
+//  var t=Math.pow(10,count-1);
+
+//  while(input!=0){
+//     var out=Math.floor(input/t);
+//     console.log(out);
+//     input=input%t;
+//     t/=10;    
+//  }
+
+/////////////////////////////////////////////
+//reverse a number
+//1234>input
+//OUTPUT
+//4
+//3
+//2
+//1
+
+// var input=1234;
+// var t=10;
+
+// while(input!=0){
+//     var out=input%t;
+//     console.log(out);
+//     input=Math.floor(input/t);
+// }
+
+////////////////////////////////////////////
+//Inverse of a number
+//52134 digit
+//12345 position
+// here digits become position and position become digits
+
+// //32451> output i think so
+// var input=52134;
+// var op=1;
+// var result=0;
+
+// while(input!=0){
+//     var od=input%10;//4
+//     var np=od;
+//     input=Math.floor(input/10);//5213
+//     result=result*10+np;
+//     op++;
+// }
+
+// console.log(result);
+/////////////////////////////////////////////////
+//Rotate a Number
+// var input=12345;
+// var rotate=3;
+// var div=1;
+// var multi=1;
+// var temp=input;
+// var count=0;
+// while(temp!=0){
+//     temp=Math.floor(temp/10);
+//     count++;
+// }
+
+//         if(rotate<0){
+//             rotate=rotate+count;// if negative
+//         }
+
+//         rotate=rotate%count;// if rotate number is more than digit
+// for(var i=1;i<=count;i++){
+//     if(i<=rotate){
+//         multi=multi*10;
+        
+//     }else{
+//         div=div*10;
+        
+//     }
+// }
+
+// // var rt=input%div;//45
+
+// // var rr=Math.floor(input/div);//123
+// // rt=rt*multi;//45000
+// // rt+=rr;
+// // document.write(rt);
+
+////////////////////////////////////////////////
+//GCD LCM
+// var frstnum=24;
+// var scndnum=2;
+
+// var nf=frstnum;
+// var ns=scndnum;
+
+// while(scndnum%frstnum!=0){
+//     var n=scndnum%frstnum;
+//     frstnum=scndnum;
+//     scndnum=n;
+// }
+
+// document.write(scndnum+"GCD");
+
+// var lcm=(nf*ns)/scndnum;
+// document.write(lcm+" lcm")
+
+////////////////////////////////////////////////
+//Prime factorization
+// var input=342
+// for(var div=2;div*div<=input;div++){
+//     if(input%div==0){
+//         document.write(div+"<br>");
+//         input=input/div;
+//     }
+// }
+// if(input!=1){
+//     document.write(input)
+// }
+
+//////////////////////////////////////////////////
+//pythagorean triplets
+// var a=2;
+// var b=3;
+// var c=1;
+
+
+// var max=0;
+// if(max<=a){max=a}
+// else if(max<b){max=b}
+// else{max=c}
+
+// if(max==a){
+//  (b*b+c*c)=(a*a);
+//     document.write("true");
+// }else if(mac==b){
+//     (a*a+c*c)=(b*b);
+//     document.write("true");
+// }else if(max==c){
+//     (a*a+b*b)=(c*c);
+//     document.write("true");
+// }else{
+//     document.write("false")
+// }
+
+//////////////////////////////////////////////
+//BenjaminBulbs
+// for(var i=1;i<=10;i++){
+//     document.write(i*i+" ");
+// }
+    </script>
+</body>
+</html>
